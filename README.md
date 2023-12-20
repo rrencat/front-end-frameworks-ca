@@ -1,8 +1,28 @@
-# React + Vite
+# Front-end Frameworks CA
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Goal
 
-Currently, two official plugins are available:
+To apply knowledge of React to build an eCommerce store.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Description
+
+## Built With
+
+- React
+- JavaScript
+- CSS
+- [NorOff API](https://docs.noroff.dev/)
+
+## Getting Started
+
+### Installing
+
+1. Clone the repo:
+
+```bash
+gh repo clone rrencat/js-framework-ca
+```
+
+### Running
+
+Start a Live Server to see my project.
