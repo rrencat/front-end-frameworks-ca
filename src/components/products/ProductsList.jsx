@@ -15,14 +15,13 @@ export default function ProductsList() {
                 setIsLoading(true);
                 const response = await fetch(BASE_URL);
 
-        
-                    const json = await response.json();
-                     setProducts(json);
-                     console.log(json)
+                if (response.ok) {
+                  const json = await response.json();
+                  setProducts(json);
+                  console.log(json)
+                }
+                    
 
-                
-
-                
             } catch {
                 setIsError(true);
             } finally {
