@@ -1,43 +1,17 @@
-import { useEffect, useState } from 'react';
 import { BASE_URL } from "../../constants/api";
 import ProductItem from './ProductItem';
+import useApi from "../hooks/useApi.js";
 
 export default function ProductsList() {
-    const [products, setProducts] = useState([]);
-    const [isLoading, setIsLoading] = useState(false);
-    const [isError, setIsError] = useState(false);
+  const { data: products, isLoading, isError } = useApi(BASE_URL);
 
-  
-    useEffect(() => {
-        async function getProducts() {
-            try {
-                setIsError(false);
-                setIsLoading(true);
-                const response = await fetch(BASE_URL);
+	if (isLoading) {
+		return <div>Loading posts...</div>;
+	}
 
-                if (response.ok) {
-                  const json = await response.json();
-                  setProducts(json);
-                  console.log(json)
-                }
-                    
-
-            } catch {
-                setIsError(true);
-            } finally {
-                setIsLoading(false);
-            }
-    }
-    getProducts();
-  }, []);
-
-  if (isLoading) {
-    return <div>Loading products...</div>;
-  }
-
-  if (isError) {
-    return <div>Error loading data</div>;
-  }
+	if (isError) {
+		return <div>Error loading posts</div>;
+	}
     
   return (
     <div>
@@ -48,3 +22,7 @@ export default function ProductsList() {
   );
 
 }
+
+
+
+	
