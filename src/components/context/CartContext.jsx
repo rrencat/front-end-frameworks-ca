@@ -11,10 +11,8 @@ export const CartProvider = ({ children }) => {
 		setCart((prevCart) => {
 			const existingItem = prevCart.find((cartItem) => cartItem.id === item.id);
 			if (existingItem) {
-				// Increase quantity of existing item
 				return prevCart.map((cartItem) => (cartItem.id === item.id ? { ...cartItem, quantity: cartItem.quantity + 1 } : cartItem));
 			} else {
-				// Add new item with quantity 1
 				return [...prevCart, { ...item, quantity: 1 }];
 			}
 		});
@@ -24,10 +22,8 @@ export const CartProvider = ({ children }) => {
 		setCart((prevCart) => {
 			const existingItem = prevCart.find((cartItem) => cartItem.id === itemId);
 			if (existingItem && existingItem.quantity > 1) {
-				// Decrease quantity of existing item
 				return prevCart.map((cartItem) => (cartItem.id === itemId ? { ...cartItem, quantity: cartItem.quantity - 1 } : cartItem));
 			} else {
-				// Remove item completely
 				return prevCart.filter((cartItem) => cartItem.id !== itemId);
 			}
 		});
