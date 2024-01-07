@@ -17,7 +17,7 @@ export default function Header() {
                     </NavLink>
                 </div>
                 <div>
-                    <NavLink to="/cart" className="flex items-center">
+                    <NavLink to="/checkout" className="flex items-center">
                         <ShoppingCartIcon className="h-6 w-6 mr-2" />
                     </NavLink>
                 </div>
