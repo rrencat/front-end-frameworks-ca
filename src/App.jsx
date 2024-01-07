@@ -18,10 +18,6 @@ function App() {
       <Route path="checkout" element={<CheckoutPage />} />
       <Route path="checkoutSuccess" element={<CheckoutSuccess />} />
       <Route path="product/:id" element={<ProductPage />} />
-
-      {/* Using path="*"" means "match anything", so this route
-            acts like a catch-all for URLs that we don't have explicit
-            routes for. */}
       <Route path="*" element={<NotFound />} />
     </Route>
   </Routes>

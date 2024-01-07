@@ -1,6 +1,7 @@
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
+import { useState } from 'react';
 
 const schema = yup
   .object({
@@ -31,17 +32,23 @@ function ContactForm() {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm({
-    resolver: yupResolver(schema),
-  });
+    reset,
+    } = useForm({
+      resolver: yupResolver(schema),
+});
 
-  function onSubmit(data) {
-    console.log(data);
-  }
+const [isSent, setIsSent] = useState(false);
+
+function onSubmit(data) {
+  console.log(data);
+  reset();
+  setIsSent(true);
+  setTimeout(() => setIsSent(false), 5000);
+}
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className='w-full mx-auto p-4 max-w-xs bg-gray-100 mb-100'>
-        <div className='mb-4'>
+    <form onSubmit={handleSubmit(onSubmit)} className='items-center justify-center w-full mx-auto max-w-xs bg-gray-100 p-8'>
+        <div className='mb-4 mx-auto'>
             <div>
                 <label><strong>Full name</strong></label>
             </div>
@@ -70,6 +77,7 @@ function ContactForm() {
             <p>{errors.message?.message}</p>
         </div>
       
+      {isSent && <p>Your message has been sent!</p>}
       
       <button className="p-4 hover:bg-gray-200"><input type="submit" /></button>
     </form>
