@@ -38,7 +38,7 @@ const CartList = () => {
 			))}
 			
 			<div className="mt-4 flex justify-between items-center">
-				<Link to="/checkoutSuccess" onClick={() => clearLocalStorage()}>Checkout</Link>
+				<Link to="checkoutSuccess" onClick={() => clearLocalStorage()}>Checkout</Link>
 			</div>
 		</div>
 	);
