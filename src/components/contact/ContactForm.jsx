@@ -40,38 +40,38 @@ function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
-        <div>
+    <form onSubmit={handleSubmit(onSubmit)} className='w-full mx-auto p-4 max-w-xs bg-gray-100 mb-100'>
+        <div className='mb-4'>
             <div>
-                <label>Full name</label>
+                <label><strong>Full name</strong></label>
             </div>
-            <input {...register('fullName')} />
+            <input{...register('fullName')} />
             <p>{errors.fullName?.message}</p>
         </div>
-        <div>
+        <div className='mb-4'>
             <div>
-                <label>Subject</label>
+                <label><strong>Subject</strong></label>
             </div>
             <input {...register('subject')} />
             <p>{errors.subject?.message}</p>
         </div>
-        <div>
+        <div className='mb-4'>
             <div>
-                <label>Email</label>
+                <label><strong>Email</strong></label>
             </div>
             <input type="email" {...register('email')} />
             <p>{errors.email?.message}</p>
         </div>
-        <div>
+        <div className='mb-4'>
             <div>
-                <label>Message</label>
+                <label><strong>Message</strong></label>
             </div>
             <input {...register('message')} />
             <p>{errors.message?.message}</p>
         </div>
       
       
-      <button><input type="submit" /></button>
+      <button className="p-4 hover:bg-gray-200"><input type="submit" /></button>
     </form>
   );
 }
