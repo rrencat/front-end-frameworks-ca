@@ -7,11 +7,7 @@ import PropTypes from "prop-types";
 function ProductFilter({ products = [] }) {
 	const [searchTerm, setSearchTerm] = useState("");
 
-	console.log("ss", searchTerm);
-
 	const filterProducts = products.filter((product) => product.title.toLowerCase().includes(searchTerm.toLowerCase()));
-
-	console.log("filterProducts", filterProducts);
 
 	return (
 		<div className="relative w-full mx-auto p-5 max-w-xs">
