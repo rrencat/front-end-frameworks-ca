@@ -19,13 +19,11 @@ You can add some bullet points if you'd like to:
 ## Built With
 
 - [React](https://react.dev)
+- React Router
 - [Vite](https://vitejs.dev)
 - [NorOff API](https://docs.noroff.dev/)
-- JavaScript
-- CSS
-
-
-# Your project title
+- [Tailwind](https://tailwindcss.com/docs/installation)
+- [DaisyUi](https://daisyui.com/docs/install/)
 
 
 
