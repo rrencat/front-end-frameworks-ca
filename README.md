@@ -6,7 +6,7 @@
 
 To apply knowledge of React to build an eCommerce store.
 
-## Description
+### Description
 
 Add a more detailed description of what your project entails and set out to do.
 
@@ -16,7 +16,7 @@ You can add some bullet points if you'd like to:
 - List item 2
 - List item 3
 
-## Built With
+### Built With
 
 - [React](https://react.dev)
 - React Router
@@ -25,9 +25,6 @@ You can add some bullet points if you'd like to:
 - [Tailwind](https://tailwindcss.com/docs/installation)
 - [DaisyUi](https://daisyui.com/docs/install/)
 
-
-
-A simple overview of the use/purpose of the project.
 
 ## Getting Started
 
