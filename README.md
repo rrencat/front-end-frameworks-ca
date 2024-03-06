@@ -28,7 +28,7 @@ Using provided NorOff API and API documentation, I have been tasked to create an
 - [React](https://react.dev)
 - React Router
 - [Vite](https://vitejs.dev)
-- [NorOff API](https://v2.api.noroff.dev/online-shop)
+- [NorOff API](https://docs.noroff.dev/docs/v2/basic/online-shop)
 - [Tailwind](https://tailwindcss.com/docs/installation)
 - [DaisyUi](https://daisyui.com/docs/install/)
 
