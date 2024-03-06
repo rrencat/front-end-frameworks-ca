@@ -59,6 +59,12 @@ gh repo clone rrencat/javascript-frameworks-ca
 npm install
 ```
 
+3. Start the project
+
+```bash
+npm start
+```
+
 ### Development with Vite
 
 To start the development server with Vite, run:
