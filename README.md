@@ -8,34 +8,51 @@ To apply knowledge of React to build an eCommerce store.
 
 ### Description
 
-Add a more detailed description of what your project entails and set out to do.
+Using provided NorOff API and API documentation, I have been tasked to create an eCommerce store using React. The 
 
-You can add some bullet points if you'd like to:
+The following pages are required:
 
-- List item 1
-- List item 2
-- List item 3
+- Homepage
+    - List of all products
+    - Look-ahead search bar
+- Individual product page
+    - Display data for a single product
+- Cart page
+- Checkout success page
+- Contact page (with form validation)
+    - Full name (Minimum number of characters is 3, required)
+    - Subject (Minimum number of characters is 3, required)
+    - Email (Must be a valid email address, required)
+    - Body (Minimum number of characters is 3, required)
 
 ### Built With
 
 - [React](https://react.dev)
 - React Router
 - [Vite](https://vitejs.dev)
-- [NorOff API](https://docs.noroff.dev/)
+- [NorOff API](https://v2.api.noroff.dev/online-shop)
 - [Tailwind](https://tailwindcss.com/docs/installation)
 - [DaisyUi](https://daisyui.com/docs/install/)
 
 
 ## Getting Started
 
+### Prerequisites
+
+- Node.js
+- npm
+
+```bash
+npm install npm@latest -g
+```
+
 ### Installing
 
-This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
 
 1. Clone the repo:
 
 ```bash
-git clone git@github.com:NoroffFEU/portfolio-1-example.git
+gh repo clone rrencat/javascript-frameworks-ca
 ```
 
 2. Install the dependencies:
@@ -44,12 +61,11 @@ git clone git@github.com:NoroffFEU/portfolio-1-example.git
 npm install
 ```
 
-### Running
+### Development with Vite
 
-Here is where you detail how to run the app. It typically involves the commands you'd need to run to start the project e.g.
-
-To run the app, run the following commands:
+To start the development server with Vite, run:
 
 ```bash
-npm run start
+npm run dev
 ```
+
