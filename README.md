@@ -8,9 +8,7 @@ To apply knowledge of React to build an eCommerce store.
 
 ### Description
 
-Using provided NorOff API and API documentation, I have been tasked to create an eCommerce store using React. The 
-
-The following pages are required:
+Using provided NorOff API and API documentation, I have been tasked to create an eCommerce store using React. With the following pages:
 
 - Homepage
     - List of all products
